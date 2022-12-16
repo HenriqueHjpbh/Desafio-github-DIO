@@ -1,0 +1,129 @@
+---------------------------------------------------DICIONARIO DE SIGLAS-----------------------------------------------
+
+1 IDE: integrated developer environment , Serve para traduzir o código para linguagem de maquina
+
+2 IDL: interface definition language, linguagem usada para descrever interfaces dos objetos CORBA, puramente descritiva (texto extra)
+
+3 SGDB: Sistema de gerenciamento de banco de dados, interface entre usuarios e o banco de dados.
+
+4 GIOP: General inter ORB protocol, (abstrato) 
+
+5 CDR: Common data representation,
+
+6 IOR: Interoperable object reference,
+ 
+7 IIOP Internet inter ORB protocol, realização concreta do GIOP
+
+8 ORB:
+
+9 CORBA:
+
+10 POA:
+
+11 DII:
+
+12 DSI:
+
+13 API: Application programming interface, intermediario entre software que permite que dois aplicativos conversem entre si
+
+14 MVC:
+
+15 EIS:
+
+16 HTTP: hypertext transfer protocol,
+
+17 DOM: Document object model,forma como se organiza elementos html e navega entre componentes de uma pagina.
+
+18 OMG: Object Management group,
+
+19 WWW: world wide web, 
+
+20 RDM: Registrador de dados da memória, transfere dados da memória
+
+21 REM: Registrador de endereço da memória, transfere endereços de memória
+
+22 BIT: Unidade digital binária, sigla(b)
+
+23 BYTE: Conjunto de 8 bits, sigla(B)
+
+24 CISC: Complex Instruction Set Computer, Arquitetura de instruções complexas em varios ciclos
+
+25 RISC: Reduced Instruction Set Computer, Arquitetura de instruções simples em um ciclo
+
+26 HTML: Hypertext markup language
+
+27 OLAP: Online Analytical Processing,
+
+28 UTF: Formato de transformação unicode,
+
+29 CSS: Cascading style sheets, linguagem de estilo que permite controle de documento escrito em HTML
+
+30 GUI: interface grafica do usuário
+
+31 QA: Quality Assurance, controle de qualidade
+
+32 LSB: Less significant bit,
+
+33 MSB: Most significant bit,
+
+34 ISA: industry standard architecture, barramento formado por slots 8 a 16 bits transferencia de dados 
+
+35 BCD: Binary code decimal, conversor de codigo 6 bits/caracteres codificando 64 caracteres
+
+36 EBCDIC: Extended Binary Coded Decimal Interchange Code, coversor de codigo utiliza 8 bits para codificar 256 caracteres ( IBM )
+
+37 ASCII: American standart code for information interchange, conversor de codigo padrão utilizado pelos outros fabricantes 8 bits/caractere codificando 256 caracters
+
+38 UNICODE: Padrao de conversão 16bits/caractere 65536 caracteres
+
+39 VLIW: Very long instruction word
+
+40 HT: Hyper threadind, Tecnologia de processador virtual intel
+
+41 SHA1: security hash algoritim
+
+42 SSH: Chave do git
+
+43 COMA: Cache only memory Access, mesmo funcionamento da NUMA associado a memoria cache (maior velocidade, maior custo)
+
+44 UMA: Uniform Memory Access, barramento unico compartilhado, gargalo
+
+45 NUMA: Non Uniform Memory Access, barramento dedicado, cada cpu possui um modulo e só em alguns casos usa o barramento compartilhado  
+
+46 NORMA: No Remote Memory Access, diferente maquinas processam instruções de processos distintos (Ñ a barramento compartilhado, memória principal local em cada maquina))
+
+47 SISD: Single Instruction Stream Single Data Stream, Um fluxo de instrução atuando em um fluxo de dados (Uniprocessador)
+
+48 SIMD: Single Instruction Stream Multiple Data Stream, Um fluxo de instrução e mais de um fluxo de dados (processador vetorial / Processador de Matrizes)
+
+49 MISD: Multiple instruction stream Single Data stream, multiplo fluxo de instrução e unico fluxo de dados (sem aplicação pratica)
+
+50 MIMD: Multiple instruction stream Multiple Data stream< multiplo fluxo de instrução e dados ( Memória compartilhada(SMP/NUMA) / Memoria distribuida(clusters))
+
+51 SMP: Simetrical multi processor, Memória fortemente acoplada
+
+52 DTD: Document Type Definition, lista de elementos, atributos e requisitos relacionados a linguagem ou variação da linguagem
+
+53 SGML: Standard Generalized markup language, padrão determinado para linguagens de marcação mesmo que independentes da plataforma
+
+54 PCN: Plano de continuidade de negócios, 
+
+55 ITIL: information technology infrastruture library
+
+56 GCSTI: gerenciamento de continuidade de serviços de tecnologia da informação
+
+--------------------------------------------------DICIONARIO DE TERMOS----------------------------------------------
+
+MEMORIA FRACAMENTE ACOPLADA
+MEMORIA FORTEMENTE ACOPLADA 
+BIBLIOTECA
+MODULO
+FUNÇÃO
+FRAMEWORK
+SERVIDOR DE APLICAÇÃO
+CLIENTE
+SERVIDOR WEB:
+NIBBLE: meio byte, 4 bits
+SERVIDOR DE BANCO DE DADOS
+PERSISTENCIA 
+SUPERESCALAR

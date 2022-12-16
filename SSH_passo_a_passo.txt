@@ -1,0 +1,79 @@
+1 criação:
+ssh-keygen -t ed25519 -C email 
+* obs: O git bash é sensivel entre letras maiusculas e minusculas importante notar que o -t é minusculo e o -C maiusculo
+
+2 local:
+* obs: O local padrão será definido, mas é possivel ser alterado desde que você saiba o que esta fazendo (não é o meu caso)
+Enter file in which to save the key(/c/Users/usuariowindows/.ssh/id_ed25519):
+
+3 Senha:
+*obs: A senha escrita não aparecerá quando digitada mas ela está lá cuidado para não digitar errado!
+Enter passphrase(empty for no passphrase):
+
+4 Fingerprint:
+*obs: será gerada uma assinatura criptografada muito estranha kkk
+The key fingerprint is:
+SHA256:quarentadigitosaqyuiaoansdfvliksjdbnfoi henrique_jpbh@hotmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|            ..o  |
+|         ocoisas |
+|       simbolos  |
+|       jklhabdsf |
+|      ...........|
+|       &¨%&%(*&¨%|
+|        = * Boom.|
+|       +.=/ .oo o|
+|      ...XD..  =)|
++----[SHA256]-----+
+
+5 Indo até a chave:
+*Para ir a pasta da chave utilizamos o comando cd (change directory) e passamos o caminho da pasta da chave
+cd /c/Users/henri/.ssh/
+*apertar enter e seguir para proximo comando
+ls
+*O comando ls (list) vai mostrar o que esta na pasta e vai mostrar a chave publica (.pub) e a privada 
+*para acessar o conteudo é necessário usar o comando cat
+cat id_ed25519.pub
+
+6 levando a chave até o github
+*a chave publica irá aparecer e essa chave deve ser colada no github na janela de criação de chave
+
+7 Voltando ao CLI (gitbash)
+ls
+pwd
+*usando o ls para listar os componentes do diretorio em seguida o pwd para mostrar o caminho completo do diretorio
+
+8 Ativando o agente
+eval $(ssh-agent -s)
+*Usando exatamente este comando iremos ativar o agente que retornara "Agent pid 1234(numero de 4 digitos qualquer)"
+
+9 Linkando o Agent a chave privada
+ssh-add id_ed25519
+*Nessa etapa passamos o caminho do diretorio + o id da chave privada. Caso depois de usar o comando ls você estiver na pasta correta use só o id da chave privada como no exemplo
+Enter passphrase for id_ed25519:
+*digite a senha e ele retornara Identity added: id_ed25519 + email cadastrado
+
+10 clonando repositorio com ssh
+vá até a aba code do repositorio, copie o link do ssh, va até o gitbash e digite
+git clone git@github.com:HenriqueHjpbh/Desafio-github-DIO.git
+*link ssh de exemplo
+
+11 encontrando repositorio clonado
+digite pwd para descobrir o caminho completo e procure a pasta
+
+12 comitando no git local
+faça alterações ou adicione arquivos a pasta do repositório
+git status
+*digite git status para verificar se há alterações e arquivos nao comitados
+caso haja itens nao comitados 
+git add .
+git add -A
+*git add . ou git add -A adicionará todos os arquivos não comitados ao repositório e caso queira fazer um commit especifico digite git add (nome do arquivo)
+Após adicionar arquivo eles ainda precisam ser commitados usando o comando git commit 
+git commit -m "informação sobre o commit"
+
+13 enviando alteração para o github 
+*para que esse commit seja enviado para o repositorio em nuvem é necessário usar o comando push
+git push origin main
+*este comando enviará todos os commits locais para nuvem 
